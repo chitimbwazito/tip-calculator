@@ -1,0 +1,110 @@
+body{
+background: hsl(185, 41%, 84%);
+font-family: monospace;
+}
+.slow{
+    color:hsl(183, 100%, 15%);
+    flex: content;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding-block-end: 0;
+    margin-block-end: 0;
+}
+.slower{
+    color:hsl(183, 100%, 15%);
+    flex: content;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing:4px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.big{
+    width: 650px;
+    height: 320px;
+    background: white;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+.right{
+    position: relative;
+    float: right;
+    display: flex;
+    width: 50%;
+    height: 280px;
+    background: teal;
+    border-radius: 8px;
+    margin: 20px;
+}
+h2{
+    padding-top: 60px;
+}
+.left{
+    position: relative;
+    float: left;
+    display: flex;
+    width: 38%;
+    height: 270px;
+    background: white;
+    border-radius: 8px;
+    margin: 15px;
+}
+.b1{
+    width: 215px;
+    height: 20px;
+    font-family: monospace;
+}
+.b5{
+    height: 40px;
+    width: 66.6px;
+    margin-bottom: 7px;
+    font-family: monospace;
+    background: teal;
+    border-radius: 8px;
+    border-color: teal;
+    border-width: 0;
+
+}
+.b6{
+    height: 40px;
+    width: 66.6px;
+    margin-bottom: 7px;
+    font-family: monospace;
+    background: white;
+    border-width: 0;
+}
+.tip{
+    color: white;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    margin: 0;
+}
+.per{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 12px;
+}
+.total{
+    color: white;
+    padding-top: 195px;
+    margin: -120px;
+
+}
+.per2{
+    color: white;
+    font-size: 12px;
+    padding-top: 5px;
+    
+}
