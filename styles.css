@@ -1,6 +1,7 @@
 body{
 background: hsl(185, 41%, 84%);
 font-family: monospace;
+font-weight: bold;
 }
 .slow{
     color:hsl(183, 100%, 15%);
@@ -32,23 +33,9 @@ font-family: monospace;
     background: white;
     margin: 40px auto;
     border-radius: 8px;
-}
-.right{
-    position: relative;
-    float: right;
     display: flex;
-    width: 50%;
-    height: 280px;
-    background: teal;
-    border-radius: 8px;
-    margin: 20px;
-}
-h2{
-    padding-top: 60px;
 }
 .left{
-    position: relative;
-    float: left;
     display: flex;
     width: 38%;
     height: 270px;
@@ -56,10 +43,25 @@ h2{
     border-radius: 8px;
     margin: 15px;
 }
-.b1{
+.bill{
     width: 215px;
     height: 20px;
     font-family: monospace;
+    font-weight: bolder;
+    background-color: hsl(189, 43%, 97%);
+    border: 0;
+}
+.custom{
+    text-indent: 8px;
+}
+.number-people{
+    width: 215px;
+    height: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+    background-color: hsl(189, 43%, 97%);
+    border:0;
+    margin-top: 0.5rem;
 }
 .b5{
     height: 40px;
@@ -67,44 +69,127 @@ h2{
     margin-bottom: 7px;
     font-family: monospace;
     background: teal;
+    border:0;
     border-radius: 8px;
-    border-color: teal;
-    border-width: 0;
-
+    color: white;
+    font-weight: bold;
 }
-.b6{
+.b5:hover{
+    opacity: 0.7;
+}
+.b5.active{
+    background: hsl(183, 100%, 9%);
+}
+.b10.active{
+    background: hsl(183, 100%, 9%);
+}
+.b15.active{
+    background: hsl(183, 100%, 9%);
+}
+.b25.active{
+    background: hsl(183, 100%, 9%);
+}
+.b50.active{
+    background: hsl(183, 100%, 9%);
+}
+.custom{
     height: 40px;
     width: 66.6px;
     margin-bottom: 7px;
     font-family: monospace;
     background: white;
     border-width: 0;
+    color: teal;
+    background-color:hsl(189, 41%, 97%);
+    border-radius: 5px;
+    font-weight: bold;
 }
-.tip{
-    color: white;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-bottom: 20px;
+.right{
+    align-items: center;
+    width: 50%;
+    height: 280px;
+    background: hsl(183, 100%, 15%);
+    border-radius: 8px;
+    margin: 20px;
+    font-weight: bold;
+}
+.mid{
+    margin:35px;
+    padding-top: 10px;
     padding-right: 30px;
+}
+.total, .tip{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: bolder;
+}
+.tip-amount{
+    font-size: 28px;
+    color: hsl(172,67%,45%);
     margin: 0;
 }
-.per{
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 0;
-    padding-right: 0;
-    padding-left: 0;
-    font-size: 12px;
+.total-amount{
+    font-size: 28px;
+    color: hsl(172,67%,45%);
+    margin: 0;
 }
-.total{
-    color: white;
-    padding-top: 195px;
-    margin: -120px;
-
+.person{
+font-size: 12px;
+color: hsl(184, 14%, 56%);
+font-weight: 700;
+margin: 0;
 }
-.per2{
-    color: white;
-    font-size: 12px;
-    padding-top: 5px;
-    
+.people{
+    font-size: 14px;
+    margin-top: 1.5rem;
+    font-weight: bolder;
+    font-family: monospace;
+}
+.error{
+    color: red;
+    display: none;
+}
+.move{
+    margin-bottom: 1.7rem;
+}
+.reset{
+    margin-top: 45px;
+    width: 250px;
+    height: 25px;
+    border-radius: 4px;
+    border-width: 0;
+    background-color: aqua;
+    font-family: monospace;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .big{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 580px;
+    }
+    .right{
+        width: 85%;
+        font-size: 10px;
+        height: 240px;
+    }
+    .reset{
+        margin: -25px;
+        margin-top: 20px;
+        height: 33px;
+        width: 190px;
+    }
+    .reset:hover{
+        opacity: 0.7;
+    }
+    .tip-amount, .total-amount{
+        margin-left:15px;
+        font-size: 24px;
+    }
+    .mid{
+        padding: 0;
+    }
 }

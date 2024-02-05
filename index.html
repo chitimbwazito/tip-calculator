@@ -12,21 +12,34 @@
     <h2 class ="slower">TTER</h2>
     <div class="big"> 
     <div class="left"><div><h3>Bill</h3>
-    <button class="b1">$</button>
+    <input id="bill" type="number" class="bill" value="$">
     <h3>Select tip %</h3>
-    <button class="b5">5%</button>
-    <button class="b5">10%</button>
-    <button class="b5">15%</button>
-    <button class="b5">25%</button>
-    <button class="b5">50%</button>
-    <button class="b6">Custom</button>
-    <h3>Number Of People</h3>
-    <button class="b1"></button>
+        <div>
+            <button id="b5" class="b5">5%</button>
+            <button id="b10" class="b5">10%</button>
+            <button id="b15" class="b5">15%</button>
+            <button id="b25" class="b5">25%</button>
+            <button id="b50" class="b5">50%</button>
+            <input id="custom" class="custom" type="number" placeholder="CUSTOM">
+        </div>
+    <label for="" class="people">Number Of People</label>
+    <label for="" class="error" id="error">Can't be zero</label>
+    <input type="number" min="1" max="10" class="number-people" id="number-people">
     </div></div>
     <div class="right">
-    <h3 class="tip">Tip Amount<div class="per">/ person Total</div></h3>
-    <h3 class="total">Total<div class="per2">/ person</div></h3>
-    <button class="b7">RESET</button>
+        <div class="mid">
+            <div class="move">
+    <div class="tip">
+        <p>Tip Amount</p>
+        <p class="tip-amount" id="tip-amount">$0.00</p></div>
+        <p class="person">/person</p>
     </div>
+    <div class="total">
+        <div>Total Amount</div>
+        <p class="total-amount" id="total-amount">$0.00</p></div>
+        <p class="person">/ person</p>
+    <button id="reset" class="reset" type="Reset">RESET</button></div>
+    </div></div>
+    <script src="index.js"></script>
     </body>
 </html>
